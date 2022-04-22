@@ -12,10 +12,6 @@ jobs:
         ros_distribution: # Only include ROS 2 distributions, as ROS 1 is not there in jammy.
           - rolling
         include:
-          # Galactic Geochelone (May 2021 - November 2022)
-          - docker_image: ubuntu:focal
-            ros_distribution: galactic
-            ros_version: 2
           # Rolling Ridley (No End-Of-Life)
           - docker_image: ubuntu:jammy
             ros_distribution: rolling
